@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,300&family=Poppins:wght@300;400;500;700&display=swap");
+    </style>
+    <script
+      src="https://kit.fontawesome.com/9d70285fe3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>University Website</title>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav class="navbar">
+        <a href="./index.html"><img src="./Images/logo.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./course.html">COURSE</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Our Certificate & Online Program For 2022</h1>
+      </div>
+    </section>
+    <!-- ----------- BLOG SECTION ------------------------- -->
+    <section class="blog-content">
+      <div class="rows">
+        <div class="blog-left">
+          <img src="./Images/certificate.jpg" alt="certificate" />
+          <h3>Our Certificate & Online Program For 2022</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
+            quod fugiat deleniti vitae ullam commodi illo at voluptas mollitia
+            atque ratione soluta harum nam consequuntur voluptates error nisi
+            culpa, unde vero possimus. Non minima repellendus vitae qui
+            voluptatum ex eius.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
+            vero tenetur amet molestiae et accusamus quasi deleniti voluptatum
+            modi hic cupiditate nam qui saepe fugit, repellat cumque voluptate
+            quis aspernatur assumenda velit ab. Velit incidunt quod assumenda
+            saepe! Blanditiis quod voluptatibus, nesciunt quo, temporibus eaque
+            laborum sunt tempore id fugiat quidem eos cumque maiores. Quisquam
+            aspernatur ipsum nihil consequuntur enim, debitis omnis minima
+            architecto voluptate quae tempora aliquid velit! Illo nemo iure
+            ipsum error nesciunt pariatur modi cum! Culpa sequi beatae officia
+            aperiam laboriosam cumque architecto, tempora sed illo recusandae
+            enim nesciunt aliquam. Error, impedit suscipit. Corporis, possimus.
+            Eaque, alias.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            explicabo similique consequatur architecto cumque, saepe eius
+            dolores tempora, assumenda magni delectus quibusdam deleniti error.
+            Veritatis recusandae maxime quas est quasi deserunt dicta aut
+            expedita commodi nemo omnis doloribus, nihil totam, impedit tempora,
+            cum nulla maiores architecto? Rem labore culpa nesciunt quam,
+            voluptatem impedit repellendus eum asperiores hic non ipsam animi!
+          </p>
+          <br />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi eius,
+            rerum tempora beatae magni impedit quisquam iste eligendi.
+            Necessitatibus veniam, eos commodi adipisci similique quis pariatur
+            quae, fuga eius aut unde dolore magni! Ratione maiores, officia
+            repudiandae laborum aut officiis a cum laboriosam at. Maxime
+            suscipit culpa quibusdam consectetur distinctio.
+          </p>
+          <div class="comment-box">
+            <form class="comment-form" action="form handler.php" method="post">
+              <h3>Leave a comment</h3>
+            </form>
+            <input type="text" placeholder="Enter Name" name="name" />
+            <input
+              type="email"
+              placeholder="Enter Email"
+              name="visitor-email"
+            />
+            <textarea
+              rows="5"
+              placeholder="Your comment"
+              name="message"
+            ></textarea>
+            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+          </div>
+        </div>
+        <div class="blog-right">
+          <h4>Post Catagories</h4>
+          <div class="post-catagories">
+            <span>Computer Science</span>
+            <span>21</span>
+          </div>
+          <div class="post-catagories">
+            <span>Business Analytic</span>
+            <span>15</span>
+          </div>
+          <div class="post-catagories">
+            <span>Data Science</span>
+            <span>25</span>
+          </div>
+          <div class="post-catagories">
+            <span>Machine Learning</span>
+            <span>18</span>
+          </div>
+          <div class="post-catagories">
+            <span>Commerce</span>
+            <span>31</span>
+          </div>
+          <div class="post-catagories">
+            <span>Journlism</span>
+            <span>22</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eos,
+        ullam debitis nesciunt iure minima doloremque blanditiis magnam sed
+        architecto?
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with<i class="fa fa-heart-o"></i>by Riha Shehzadi</p>
+    </footer>
+    <!--------- javascript for toggle devices ------------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

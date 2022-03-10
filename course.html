@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,300&family=Poppins:wght@300;400;500;700&display=swap");
+    </style>
+    <script
+      src="https://kit.fontawesome.com/9d70285fe3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>University Website</title>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav class="navbar">
+        <a href="./index.html"><img src="./Images/logo.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./course.html">COURSE</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Our Courses</h1>
+      </div>
+    </section>
+
+    <!-- ----------------course section ---------------- -->
+    <section class="course" id="Course">
+      <div class="course-detail">
+        <h1>Courses we offer</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      <div class="rows">
+        <div class="row row-1">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis,
+            aspernatur quod vero recusandae repellat consequatur sint expedita
+            animi enim quis.
+          </p>
+        </div>
+        <div class="row row-2">
+          <h3>Degree</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis,
+            aspernatur quod vero recusandae repellat consequatur sint expedita
+            animi enim quis.
+          </p>
+        </div>
+        <div class="row row-3">
+          <h3>Post Graduation</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis,
+            aspernatur quod vero recusandae repellat consequatur sint expedita
+            animi enim quis.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- --------------------- our facilities ------------------------ -->
+    <section class="facilities">
+      <h1>Our Facilities</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, nobis?
+      </p>
+      <div class="rows">
+        <div class="facilities-row facilities-row-1">
+          <img src="./Images/library.png" alt="library" />
+          <h3>World Class Library</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            dolores odio dolorum ipsa officia incidunt.
+          </p>
+        </div>
+        <div class="facilities-row facilities-row-2">
+          <img src="./Images/basketball.png" alt="backetball area" />
+          <h3>Largest Playground</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            dolores odio dolorum ipsa officia incidunt.
+          </p>
+        </div>
+        <div class="facilities-row facilities-row-3">
+          <img src="./Images/cafeteria.png" alt="cafeteria" />
+          <h3>Tasty and Healthy Food</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            dolores odio dolorum ipsa officia incidunt.
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eos,
+        ullam debitis nesciunt iure minima doloremque blanditiis magnam sed
+        architecto?
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made with<i class="fa fa-heart-o"></i>by Riha Shehzadi</p>
+    </footer>
+    <!--------- javascript for toggle devices ------------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
